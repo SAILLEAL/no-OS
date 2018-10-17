@@ -133,8 +133,8 @@ int main(void)
 	xcvr_getconfig(&ad9250_xcvr);
 
 	ad9250_xcvr.reconfig_bypass = 0;
-	ad9250_xcvr.lane_rate_kbps = ad9250_0_param.lane_rate_kbps;
-	ad9250_xcvr.ref_clock_khz = 245760;
+	ad9250_xcvr.lane_rate_khz = ad9250_0_param.lane_rate_kbps;
+	ad9250_xcvr.ref_rate_khz = 245760;
 
 	ad9250_jesd204.scramble_enable = 1;
 	ad9250_jesd204.octets_per_frame = 1;
